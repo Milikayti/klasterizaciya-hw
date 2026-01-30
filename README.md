@@ -18,31 +18,12 @@ HAproxy должен балансировать только тот http-тра�
 
 Задание 1
 
-Наполнение файла haproxy.cfg
+Файл haproxy.cfg
 
-```
-global
-    log /dev/log local0
-    log /dev/log local1 notice
-    daemon
 
-defaults
-    log global
-    mode tcp
-    option tcplog
-    timeout connect 5s
-    timeout client  50s
-    timeout server  50s
+![первое задание](/configs/haproxy.cfg)
 
-frontend frontend_http
-    bind *:8080
-    default_backend backend_servers
 
-backend backend_servers
-    balance roundrobin
-    server server1 127.0.0.1:8888 check
-    server server2 127.0.0.1:9999 check
-```
 ![скриншот с демонстрацией работы robin](Robin.png)
 
 
