@@ -43,4 +43,10 @@ backend backend_servers
     server server1 127.0.0.1:8888 check
     server server2 127.0.0.1:9999 check
 ```
+![скриншот с демонстрацией работы robin](Robin.png)
+
+
+### Задание 2
+
+
 
