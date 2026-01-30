@@ -91,5 +91,9 @@ backend reject_backend
 ```
 Скриншот c использованием домена example.local
 
-![domen]()
+![domen](l7.png)
+
+И скриншот без использования домена
+
+![without_domain](without.png)
 
